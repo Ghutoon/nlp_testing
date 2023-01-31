@@ -1,0 +1,76 @@
+{
+    "name": "Corpus with entities",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "movies.actor",
+            "utterances": [
+                "Show movies of @hero",
+                "Give movies starring @hero",
+                "List movies by @hero",
+                "List movies starring @hero",
+                "Movies by @hero",
+                "Movies starring @hero"
+            ]
+        },
+        {
+            "intent": "movies.genre",
+            "utterances": [
+                "@genre movies",
+                "Give movies genre @genre",
+                "List movies by @genre",
+                "List movies for @genre"
+            ]
+        },
+        {
+            "intent": "movies.popularity_order_ascending",
+            "utterances": [
+                "movies sorted by @popularity_order_ascending",
+                "movies arranged by @popularity_order_ascending",
+                "list of all movies sorted by @popularity_order_ascending",
+                "list of all movies arranged by @popularity_order_ascending"
+            ]
+        }
+    ],
+    "entities": {
+        "hero": {
+            "options": {
+                "Tom Cruise": [
+                    "Tom Cruise"
+                ],
+                "Morgan Freeman": [
+                    "Morgan Freeman"
+                ],
+                "Johnny Depp": [
+                    "Johnny Depp"
+                ]
+            }
+        },
+        "genre": {
+            "options": {
+                "horror": [
+                    "horror"
+                ],
+                "comedy": [
+                    "comedy"
+                ],
+                "action": [
+                    "action"
+                ],
+                "adventure": [
+                    "adventure"
+                ]
+            }
+        },
+        "popularity_order_ascending": {
+            "options": {
+                "increasing popularity": [
+                    "popularity_asc"
+                ],
+                "popularity": [
+                    "popularity_desc"
+                ]
+            }
+        }
+    }
+}

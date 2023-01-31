@@ -1,0 +1,1410 @@
+{
+  "settings": {
+    "tag": "nlp",
+    "forceNER": true,
+    "languages": [
+      "en"
+    ],
+    "autoSave": false,
+    "corpora": [
+      "./corpus_2.json"
+    ],
+    "calculateSentiment": true,
+    "executeActionsBeforeAnswers": false
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "@hero,movi,of,show": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,give,movi,star": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,by,list,movi": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,list,movi,star": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,by,movi": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,movi,star": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,all,i,movi,of,the,want": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,movi": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,all,movi,of,the": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,all,list,movi,of": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@hero,act,has,in,movi,which": {
+            "intent": "movies.actor",
+            "domain": "default"
+          },
+          "@genr,genr,list,movi,of": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,list,movi": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,genr,movi,of,send": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,movi,send": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,genr,movi,of,show": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,movi,show": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,genr,me,movi,of,show": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,me,movi,show": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,are,genr,movi,of,some,what": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,are,movi,some,what": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,movi": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,categori,movi,of": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,categori,list,movi,of": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,categori,me,movi,of,send": {
+            "intent": "movies.genre",
+            "domain": "default"
+          },
+          "@genr,categori,movi,of,send": {
+            "intent": "movies.genre",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "movies.actor": "default",
+          "movies.genre": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Show movies of @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "Give movies starring @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "List movies by @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "List movies starring @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "Movies by @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "Movies starring @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want all the movies of @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "@hero movies",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "All the movies of @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "List all movies of @hero",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "Movies in which @hero has acted",
+            "intent": "movies.actor"
+          },
+          {
+            "domain": "default",
+            "utterance": "List movies of genre @genre",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "List @genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Send movies of genre @genre",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Send @genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show movies of genre @genre",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show @genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me movies of genre @genre",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me @genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are some movies of genre @genre",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are some @genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "@genre movies",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Movies of @genre category",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "List movies of @genre category",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Send me movies of @genre category",
+            "intent": "movies.genre"
+          },
+          {
+            "domain": "default",
+            "utterance": "Send movies of @genre category",
+            "intent": "movies.genre"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "show": 1,
+              "movi": 1,
+              "of": 1,
+              "@hero": 1,
+              "give": 1,
+              "star": 1,
+              "list": 1,
+              "by": 1,
+              "i": 1,
+              "want": 1,
+              "all": 1,
+              "the": 1,
+              "in": 1,
+              "which": 1,
+              "has": 1,
+              "act": 1,
+              "genr": 1,
+              "@genr": 1,
+              "send": 1,
+              "me": 1,
+              "what": 1,
+              "are": 1,
+              "some": 1,
+              "categori": 1
+            },
+            "intents": {
+              "movies.actor": 1,
+              "movies.genre": 1
+            },
+            "intentFeatures": {
+              "movies.actor": {
+                "show": 1,
+                "movi": 1,
+                "of": 1,
+                "@hero": 1,
+                "give": 1,
+                "star": 1,
+                "list": 1,
+                "by": 1,
+                "i": 1,
+                "want": 1,
+                "all": 1,
+                "the": 1,
+                "in": 1,
+                "which": 1,
+                "has": 1,
+                "act": 1
+              },
+              "movies.genre": {
+                "list": 1,
+                "movi": 1,
+                "of": 1,
+                "genr": 1,
+                "@genr": 1,
+                "send": 1,
+                "show": 1,
+                "me": 1,
+                "what": 1,
+                "are": 1,
+                "some": 1,
+                "categori": 1
+              }
+            },
+            "featuresToIntent": {
+              "show": [
+                "movies.actor",
+                "movies.genre"
+              ],
+              "movi": [
+                "movies.actor",
+                "movies.genre"
+              ],
+              "of": [
+                "movies.actor",
+                "movies.genre"
+              ],
+              "@hero": [
+                "movies.actor"
+              ],
+              "give": [
+                "movies.actor"
+              ],
+              "star": [
+                "movies.actor"
+              ],
+              "list": [
+                "movies.actor",
+                "movies.genre"
+              ],
+              "by": [
+                "movies.actor"
+              ],
+              "i": [
+                "movies.actor"
+              ],
+              "want": [
+                "movies.actor"
+              ],
+              "all": [
+                "movies.actor"
+              ],
+              "the": [
+                "movies.actor"
+              ],
+              "in": [
+                "movies.actor"
+              ],
+              "which": [
+                "movies.actor"
+              ],
+              "has": [
+                "movies.actor"
+              ],
+              "act": [
+                "movies.actor"
+              ],
+              "genr": [
+                "movies.genre"
+              ],
+              "@genr": [
+                "movies.genre"
+              ],
+              "send": [
+                "movies.genre"
+              ],
+              "me": [
+                "movies.genre"
+              ],
+              "what": [
+                "movies.genre"
+              ],
+              "are": [
+                "movies.genre"
+              ],
+              "some": [
+                "movies.genre"
+              ],
+              "categori": [
+                "movies.genre"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "show",
+                "movi",
+                "of",
+                "@hero",
+                "give",
+                "star",
+                "list",
+                "by",
+                "i",
+                "want",
+                "all",
+                "the",
+                "in",
+                "which",
+                "has",
+                "act",
+                "genr",
+                "@genr",
+                "send",
+                "me",
+                "what",
+                "are",
+                "some",
+                "categori"
+              ],
+              "intents": [
+                "movies.actor",
+                "movies.genre"
+              ],
+              "perceptrons": [
+                [
+                  0.26252657175064087,
+                  3.3809611797332764,
+                  0.29722192883491516,
+                  8.696691513061523,
+                  -0.18483564257621765,
+                  0.7287337183952332,
+                  -0.20655986666679382,
+                  0.7355172634124756,
+                  -0.007374836131930351,
+                  -0.007374836131930351,
+                  0.43260934948921204,
+                  -0.14174841344356537,
+                  0.13567601144313812,
+                  0.13567601144313812,
+                  0.13567601144313812,
+                  0.13567601144313812,
+                  -1.6070873737335205,
+                  -5.3147807121276855,
+                  -0.8346907496452332,
+                  -0.31851688027381897,
+                  -0.1668231338262558,
+                  -0.1668231338262558,
+                  -0.1668231338262558,
+                  -0.29504838585853577,
+                  1.6900748582437704
+                ],
+                [
+                  0.253889799118042,
+                  3.5404210090637207,
+                  -0.784743070602417,
+                  -5.277194023132324,
+                  -0.426008939743042,
+                  -1.1906323432922363,
+                  0.17955109477043152,
+                  -1.0608023405075073,
+                  -0.189471036195755,
+                  -0.189471036195755,
+                  -0.6251105070114136,
+                  -0.3393374979496002,
+                  -0.0578857883810997,
+                  -0.0578857883810997,
+                  -0.0578857883810997,
+                  -0.0578857883810997,
+                  0.7509350180625916,
+                  8.820388793945312,
+                  0.1780778020620346,
+                  -0.062009669840335846,
+                  0.07292796671390533,
+                  0.07292796671390533,
+                  0.07292796671390533,
+                  0.8155453205108643,
+                  1.7689040358258503
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Show movies of @hero"
+      ],
+      [
+        "en",
+        "Give movies starring @hero"
+      ],
+      [
+        "en",
+        "List movies by @hero"
+      ],
+      [
+        "en",
+        "List movies starring @hero"
+      ],
+      [
+        "en",
+        "Movies by @hero"
+      ],
+      [
+        "en",
+        "Movies starring @hero"
+      ],
+      [
+        "en",
+        "I want all the movies of @hero"
+      ],
+      [
+        "en",
+        "@hero movies"
+      ],
+      [
+        "en",
+        "All the movies of @hero"
+      ],
+      [
+        "en",
+        "List all movies of @hero"
+      ],
+      [
+        "en",
+        "Movies in which @hero has acted"
+      ],
+      [
+        "en",
+        "List movies of genre @genre"
+      ],
+      [
+        "en",
+        "List @genre movies"
+      ],
+      [
+        "en",
+        "Send movies of genre @genre"
+      ],
+      [
+        "en",
+        "Send @genre movies"
+      ],
+      [
+        "en",
+        "Show movies of genre @genre"
+      ],
+      [
+        "en",
+        "Show @genre movies"
+      ],
+      [
+        "en",
+        "Show me movies of genre @genre"
+      ],
+      [
+        "en",
+        "Show me @genre movies"
+      ],
+      [
+        "en",
+        "What are some movies of genre @genre"
+      ],
+      [
+        "en",
+        "What are some @genre movies"
+      ],
+      [
+        "en",
+        "@genre movies"
+      ],
+      [
+        "en",
+        "Movies of @genre category"
+      ],
+      [
+        "en",
+        "List movies of @genre category"
+      ],
+      [
+        "en",
+        "Send me movies of @genre category"
+      ],
+      [
+        "en",
+        "Send movies of @genre category"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner"
+    },
+    "rules": {
+      "en": {
+        "hero": {
+          "name": "hero",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "Scarlett Johansson",
+              "texts": [
+                "Scarlett Johansson"
+              ]
+            },
+            {
+              "option": "Robert Downey, Jr.",
+              "texts": [
+                "Robert Downey, Jr."
+              ]
+            },
+            {
+              "option": "Samuel L. Jackson",
+              "texts": [
+                "Samuel L. Jackson"
+              ]
+            },
+            {
+              "option": "Zoe Saldana",
+              "texts": [
+                "Zoe Saldana"
+              ]
+            },
+            {
+              "option": "Chris Hemsworth",
+              "texts": [
+                "Chris Hemsworth"
+              ]
+            },
+            {
+              "option": "Chris Pratt",
+              "texts": [
+                "Chris Pratt"
+              ]
+            },
+            {
+              "option": "Tom Cruise",
+              "texts": [
+                "Tom Cruise"
+              ]
+            },
+            {
+              "option": "Chris Evans",
+              "texts": [
+                "Chris Evans"
+              ]
+            },
+            {
+              "option": "Tom Hanks",
+              "texts": [
+                "Tom Hanks"
+              ]
+            },
+            {
+              "option": "Vin Diesel",
+              "texts": [
+                "Vin Diesel"
+              ]
+            },
+            {
+              "option": "Bradley Cooper",
+              "texts": [
+                "Bradley Cooper"
+              ]
+            },
+            {
+              "option": "Johnny Depp",
+              "texts": [
+                "Johnny Depp"
+              ]
+            },
+            {
+              "option": "Dwayne Johnson",
+              "texts": [
+                "Dwayne Johnson"
+              ]
+            },
+            {
+              "option": "Tom Holland",
+              "texts": [
+                "Tom Holland"
+              ]
+            },
+            {
+              "option": "Mark Ruffalo",
+              "texts": [
+                "Mark Ruffalo"
+              ]
+            },
+            {
+              "option": "Emma Watson",
+              "texts": [
+                "Emma Watson"
+              ]
+            },
+            {
+              "option": "Don Cheadle",
+              "texts": [
+                "Don Cheadle"
+              ]
+            },
+            {
+              "option": "Jeremy Renner",
+              "texts": [
+                "Jeremy Renner"
+              ]
+            },
+            {
+              "option": "Will Smith",
+              "texts": [
+                "Will Smith"
+              ]
+            },
+            {
+              "option": "Elizabeth Olsen",
+              "texts": [
+                "Elizabeth Olsen"
+              ]
+            },
+            {
+              "option": "Daniel Radcliffe",
+              "texts": [
+                "Daniel Radcliffe"
+              ]
+            },
+            {
+              "option": "Benedict Cumberbatch",
+              "texts": [
+                "Benedict Cumberbatch"
+              ]
+            },
+            {
+              "option": "Harrison Ford",
+              "texts": [
+                "Harrison Ford"
+              ]
+            },
+            {
+              "option": "Josh Brolin",
+              "texts": [
+                "Josh Brolin"
+              ]
+            },
+            {
+              "option": "Karen Gillan",
+              "texts": [
+                "Karen Gillan"
+              ]
+            },
+            {
+              "option": "Rupert Grint",
+              "texts": [
+                "Rupert Grint"
+              ]
+            },
+            {
+              "option": "Chadwick Boseman",
+              "texts": [
+                "Chadwick Boseman"
+              ]
+            },
+            {
+              "option": "Letitia Wright",
+              "texts": [
+                "Letitia Wright"
+              ]
+            },
+            {
+              "option": "Dave Bautista",
+              "texts": [
+                "Dave Bautista"
+              ]
+            },
+            {
+              "option": "Sebastian Stan",
+              "texts": [
+                "Sebastian Stan"
+              ]
+            },
+            {
+              "option": "Steve Carell",
+              "texts": [
+                "Steve Carell"
+              ]
+            },
+            {
+              "option": "Leonardo DiCaprio",
+              "texts": [
+                "Leonardo DiCaprio"
+              ]
+            },
+            {
+              "option": "Matt Damon",
+              "texts": [
+                "Matt Damon"
+              ]
+            },
+            {
+              "option": "Danai Gurira",
+              "texts": [
+                "Danai Gurira"
+              ]
+            },
+            {
+              "option": "Tom Hiddleston",
+              "texts": [
+                "Tom Hiddleston"
+              ]
+            },
+            {
+              "option": "Brad Pitt",
+              "texts": [
+                "Brad Pitt"
+              ]
+            },
+            {
+              "option": "Paul Bettany",
+              "texts": [
+                "Paul Bettany"
+              ]
+            },
+            {
+              "option": "Bruce Willis",
+              "texts": [
+                "Bruce Willis"
+              ]
+            },
+            {
+              "option": "Eddie Murphy",
+              "texts": [
+                "Eddie Murphy"
+              ]
+            },
+            {
+              "option": "Liam Neeson",
+              "texts": [
+                "Liam Neeson"
+              ]
+            },
+            {
+              "option": "Benedict Wong",
+              "texts": [
+                "Benedict Wong"
+              ]
+            },
+            {
+              "option": "Ben Stiller",
+              "texts": [
+                "Ben Stiller"
+              ]
+            },
+            {
+              "option": "Hugh Jackman",
+              "texts": [
+                "Hugh Jackman"
+              ]
+            },
+            {
+              "option": "Ian McKellen",
+              "texts": [
+                "Ian McKellen"
+              ]
+            },
+            {
+              "option": "Sam Worthington",
+              "texts": [
+                "Sam Worthington"
+              ]
+            },
+            {
+              "option": "Gwyneth Paltrow",
+              "texts": [
+                "Gwyneth Paltrow"
+              ]
+            },
+            {
+              "option": "Mark Wahlberg",
+              "texts": [
+                "Mark Wahlberg"
+              ]
+            },
+            {
+              "option": "Jennifer Lawrence",
+              "texts": [
+                "Jennifer Lawrence"
+              ]
+            },
+            {
+              "option": "Nicolas Cage",
+              "texts": [
+                "Nicolas Cage"
+              ]
+            },
+            {
+              "option": "Cameron Diaz",
+              "texts": [
+                "Cameron Diaz"
+              ]
+            },
+            {
+              "option": "Ewan McGregor",
+              "texts": [
+                "Ewan McGregor"
+              ]
+            },
+            {
+              "option": "Pom Klementieff",
+              "texts": [
+                "Pom Klementieff"
+              ]
+            },
+            {
+              "option": "Jim Carrey",
+              "texts": [
+                "Jim Carrey"
+              ]
+            },
+            {
+              "option": "Idris Elba",
+              "texts": [
+                "Idris Elba"
+              ]
+            },
+            {
+              "option": "Christian Bale",
+              "texts": [
+                "Christian Bale"
+              ]
+            },
+            {
+              "option": "Natalie Portman",
+              "texts": [
+                "Natalie Portman"
+              ]
+            },
+            {
+              "option": "Josh Gad",
+              "texts": [
+                "Josh Gad"
+              ]
+            },
+            {
+              "option": "Julia Roberts",
+              "texts": [
+                "Julia Roberts"
+              ]
+            },
+            {
+              "option": "Sandra Bullock",
+              "texts": [
+                "Sandra Bullock"
+              ]
+            },
+            {
+              "option": "Martin Freeman",
+              "texts": [
+                "Martin Freeman"
+              ]
+            },
+            {
+              "option": "Adam Sandler",
+              "texts": [
+                "Adam Sandler"
+              ]
+            },
+            {
+              "option": "Ralph Fiennes",
+              "texts": [
+                "Ralph Fiennes"
+              ]
+            },
+            {
+              "option": "Ryan Reynolds",
+              "texts": [
+                "Ryan Reynolds"
+              ]
+            },
+            {
+              "option": "Jack Black",
+              "texts": [
+                "Jack Black"
+              ]
+            },
+            {
+              "option": "Ben Affleck",
+              "texts": [
+                "Ben Affleck"
+              ]
+            },
+            {
+              "option": "Robert De Niro",
+              "texts": [
+                "Robert De Niro"
+              ]
+            },
+            {
+              "option": "Jason Statham",
+              "texts": [
+                "Jason Statham"
+              ]
+            },
+            {
+              "option": "Sylvester Stallone",
+              "texts": [
+                "Sylvester Stallone"
+              ]
+            },
+            {
+              "option": "Paul Rudd",
+              "texts": [
+                "Paul Rudd"
+              ]
+            },
+            {
+              "option": "Owen Wilson",
+              "texts": [
+                "Owen Wilson"
+              ]
+            },
+            {
+              "option": "Adam Driver",
+              "texts": [
+                "Adam Driver"
+              ]
+            },
+            {
+              "option": "Daniel Craig",
+              "texts": [
+                "Daniel Craig"
+              ]
+            },
+            {
+              "option": "Daisy Ridley",
+              "texts": [
+                "Daisy Ridley"
+              ]
+            },
+            {
+              "option": "John Boyega",
+              "texts": [
+                "John Boyega"
+              ]
+            },
+            {
+              "option": "Morgan Freeman",
+              "texts": [
+                "Morgan Freeman"
+              ]
+            },
+            {
+              "option": "Robin Williams",
+              "texts": [
+                "Robin Williams"
+              ]
+            },
+            {
+              "option": "Keanu Reeves",
+              "texts": [
+                "Keanu Reeves"
+              ]
+            },
+            {
+              "option": "Orlando Bloom",
+              "texts": [
+                "Orlando Bloom"
+              ]
+            },
+            {
+              "option": "Mel Gibson",
+              "texts": [
+                "Mel Gibson"
+              ]
+            },
+            {
+              "option": "George Clooney",
+              "texts": [
+                "George Clooney"
+              ]
+            },
+            {
+              "option": "Kevin Hart",
+              "texts": [
+                "Kevin Hart"
+              ]
+            },
+            {
+              "option": "Robert Pattinson",
+              "texts": [
+                "Robert Pattinson"
+              ]
+            },
+            {
+              "option": "Brie Larson",
+              "texts": [
+                "Brie Larson"
+              ]
+            },
+            {
+              "option": "Simon Pegg",
+              "texts": [
+                "Simon Pegg"
+              ]
+            },
+            {
+              "option": "Lupita Nyong'o",
+              "texts": [
+                "Lupita Nyong'o"
+              ]
+            },
+            {
+              "option": "Arnold Schwarzenegger",
+              "texts": [
+                "Arnold Schwarzenegger"
+              ]
+            },
+            {
+              "option": "Shia LaBeouf",
+              "texts": [
+                "Shia LaBeouf"
+              ]
+            },
+            {
+              "option": "Meryl Streep",
+              "texts": [
+                "Meryl Streep"
+              ]
+            },
+            {
+              "option": "Anthony Mackie",
+              "texts": [
+                "Anthony Mackie"
+              ]
+            },
+            {
+              "option": "Jude Law",
+              "texts": [
+                "Jude Law"
+              ]
+            },
+            {
+              "option": "Jon Favreau",
+              "texts": [
+                "Jon Favreau"
+              ]
+            },
+            {
+              "option": "Mark Hamill",
+              "texts": [
+                "Mark Hamill"
+              ]
+            },
+            {
+              "option": "Denzel Washington",
+              "texts": [
+                "Denzel Washington"
+              ]
+            },
+            {
+              "option": "Anthony Hopkins",
+              "texts": [
+                "Anthony Hopkins"
+              ]
+            },
+            {
+              "option": "Keegan-Michael Key",
+              "texts": [
+                "Keegan-Michael Key"
+              ]
+            },
+            {
+              "option": "Tim Allen",
+              "texts": [
+                "Tim Allen"
+              ]
+            },
+            {
+              "option": "Keira Knightley",
+              "texts": [
+                "Keira Knightley"
+              ]
+            },
+            {
+              "option": "Channing Tatum",
+              "texts": [
+                "Channing Tatum"
+              ]
+            },
+            {
+              "option": "Geoffrey Rush",
+              "texts": [
+                "Geoffrey Rush"
+              ]
+            },
+            {
+              "option": "Mike Myers",
+              "texts": [
+                "Mike Myers"
+              ]
+            }
+          ]
+        },
+        "genre": {
+          "name": "genre",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "action",
+              "texts": [
+                "action"
+              ]
+            },
+            {
+              "option": "adventure",
+              "texts": [
+                "adventure"
+              ]
+            },
+            {
+              "option": "animation",
+              "texts": [
+                "animation"
+              ]
+            },
+            {
+              "option": "comedy",
+              "texts": [
+                "comedy"
+              ]
+            },
+            {
+              "option": "crime",
+              "texts": [
+                "crime"
+              ]
+            },
+            {
+              "option": "documentary",
+              "texts": [
+                "documentary"
+              ]
+            },
+            {
+              "option": "drama",
+              "texts": [
+                "drama"
+              ]
+            },
+            {
+              "option": "family",
+              "texts": [
+                "family"
+              ]
+            },
+            {
+              "option": "fantasy",
+              "texts": [
+                "fantasy"
+              ]
+            },
+            {
+              "option": "history",
+              "texts": [
+                "history"
+              ]
+            },
+            {
+              "option": "horror",
+              "texts": [
+                "horror"
+              ]
+            },
+            {
+              "option": "music",
+              "texts": [
+                "music"
+              ]
+            },
+            {
+              "option": "mystery",
+              "texts": [
+                "mystery"
+              ]
+            },
+            {
+              "option": "romance",
+              "texts": [
+                "romance"
+              ]
+            },
+            {
+              "option": "science fiction",
+              "texts": [
+                "science fiction"
+              ]
+            },
+            {
+              "option": "tv movie",
+              "texts": [
+                "tv movie"
+              ]
+            },
+            {
+              "option": "thriller",
+              "texts": [
+                "thriller"
+              ]
+            },
+            {
+              "option": "war",
+              "texts": [
+                "war"
+              ]
+            },
+            {
+              "option": "western",
+              "texts": [
+                "western"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {}
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {
+    "movies.actor": {
+      "hero": {
+        "intent": "movies.actor",
+        "entity": "hero",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "movies.genre": {
+      "genre": {
+        "intent": "movies.genre",
+        "entity": "genre",
+        "mandatory": false,
+        "locales": {}
+      }
+    }
+  }
+}

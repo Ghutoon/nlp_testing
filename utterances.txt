@@ -1,0 +1,5 @@
+"I want all the movies of @hero",
+"@hero movies",
+"All the movies of @hero",
+"List all movies of @hero",
+"Movies in which @hero has acted"

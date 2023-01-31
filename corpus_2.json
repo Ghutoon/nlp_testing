@@ -1,0 +1,409 @@
+{
+    "name": "Corpus with entities",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "movies.actor",
+            "utterances": [
+                "Show movies of @hero",
+                "Give movies starring @hero",
+                "List movies by @hero",
+                "List movies starring @hero",
+                "Movies by @hero",
+                "Movies starring @hero",
+                "I want all the movies of @hero",
+                "@hero movies",
+                "All the movies of @hero",
+                "List all movies of @hero",
+                "Movies in which @hero has acted"
+            ]
+        },
+        {
+            "intent": "movies.genre",
+            "utterances": [
+                "List movies of genre @genre",
+                "List @genre movies",
+                "Send movies of genre @genre",
+                "Send @genre movies",
+                "Show movies of genre @genre",
+                "Show @genre movies",
+                "Show me movies of genre @genre",
+                "Show me @genre movies",
+                "What are some movies of genre @genre",
+                "What are some @genre movies",
+                "@genre movies",
+                "Movies of @genre category",
+                "List movies of @genre category",
+                "Send me movies of @genre category",
+                "Send movies of @genre category"
+            ]
+        }
+    ],
+    "entities": {
+        "hero": {
+            "options": {
+                "Scarlett Johansson": [
+                    "Scarlett Johansson"
+                ],
+                "Robert Downey, Jr.": [
+                    "Robert Downey, Jr."
+                ],
+                "Samuel L. Jackson": [
+                    "Samuel L. Jackson"
+                ],
+                "Zoe Saldana": [
+                    "Zoe Saldana"
+                ],
+                "Chris Hemsworth": [
+                    "Chris Hemsworth"
+                ],
+                "Chris Pratt": [
+                    "Chris Pratt"
+                ],
+                "Tom Cruise": [
+                    "Tom Cruise"
+                ],
+                "Chris Evans": [
+                    "Chris Evans"
+                ],
+                "Tom Hanks": [
+                    "Tom Hanks"
+                ],
+                "Vin Diesel": [
+                    "Vin Diesel"
+                ],
+                "Bradley Cooper": [
+                    "Bradley Cooper"
+                ],
+                "Johnny Depp": [
+                    "Johnny Depp"
+                ],
+                "Dwayne Johnson": [
+                    "Dwayne Johnson"
+                ],
+                "Tom Holland": [
+                    "Tom Holland"
+                ],
+                "Mark Ruffalo": [
+                    "Mark Ruffalo"
+                ],
+                "Emma Watson": [
+                    "Emma Watson"
+                ],
+                "Don Cheadle": [
+                    "Don Cheadle"
+                ],
+                "Jeremy Renner": [
+                    "Jeremy Renner"
+                ],
+                "Will Smith": [
+                    "Will Smith"
+                ],
+                "Elizabeth Olsen": [
+                    "Elizabeth Olsen"
+                ],
+                "Daniel Radcliffe": [
+                    "Daniel Radcliffe"
+                ],
+                "Benedict Cumberbatch": [
+                    "Benedict Cumberbatch"
+                ],
+                "Harrison Ford": [
+                    "Harrison Ford"
+                ],
+                "Josh Brolin": [
+                    "Josh Brolin"
+                ],
+                "Karen Gillan": [
+                    "Karen Gillan"
+                ],
+                "Rupert Grint": [
+                    "Rupert Grint"
+                ],
+                "Chadwick Boseman": [
+                    "Chadwick Boseman"
+                ],
+                "Letitia Wright": [
+                    "Letitia Wright"
+                ],
+                "Dave Bautista": [
+                    "Dave Bautista"
+                ],
+                "Sebastian Stan": [
+                    "Sebastian Stan"
+                ],
+                "Steve Carell": [
+                    "Steve Carell"
+                ],
+                "Leonardo DiCaprio": [
+                    "Leonardo DiCaprio"
+                ],
+                "Matt Damon": [
+                    "Matt Damon"
+                ],
+                "Danai Gurira": [
+                    "Danai Gurira"
+                ],
+                "Tom Hiddleston": [
+                    "Tom Hiddleston"
+                ],
+                "Brad Pitt": [
+                    "Brad Pitt"
+                ],
+                "Paul Bettany": [
+                    "Paul Bettany"
+                ],
+                "Bruce Willis": [
+                    "Bruce Willis"
+                ],
+                "Eddie Murphy": [
+                    "Eddie Murphy"
+                ],
+                "Liam Neeson": [
+                    "Liam Neeson"
+                ],
+                "Benedict Wong": [
+                    "Benedict Wong"
+                ],
+                "Ben Stiller": [
+                    "Ben Stiller"
+                ],
+                "Hugh Jackman": [
+                    "Hugh Jackman"
+                ],
+                "Ian McKellen": [
+                    "Ian McKellen"
+                ],
+                "Sam Worthington": [
+                    "Sam Worthington"
+                ],
+                "Gwyneth Paltrow": [
+                    "Gwyneth Paltrow"
+                ],
+                "Mark Wahlberg": [
+                    "Mark Wahlberg"
+                ],
+                "Jennifer Lawrence": [
+                    "Jennifer Lawrence"
+                ],
+                "Nicolas Cage": [
+                    "Nicolas Cage"
+                ],
+                "Cameron Diaz": [
+                    "Cameron Diaz"
+                ],
+                "Ewan McGregor": [
+                    "Ewan McGregor"
+                ],
+                "Pom Klementieff": [
+                    "Pom Klementieff"
+                ],
+                "Jim Carrey": [
+                    "Jim Carrey"
+                ],
+                "Idris Elba": [
+                    "Idris Elba"
+                ],
+                "Christian Bale": [
+                    "Christian Bale"
+                ],
+                "Natalie Portman": [
+                    "Natalie Portman"
+                ],
+                "Josh Gad": [
+                    "Josh Gad"
+                ],
+                "Julia Roberts": [
+                    "Julia Roberts"
+                ],
+                "Sandra Bullock": [
+                    "Sandra Bullock"
+                ],
+                "Martin Freeman": [
+                    "Martin Freeman"
+                ],
+                "Adam Sandler": [
+                    "Adam Sandler"
+                ],
+                "Ralph Fiennes": [
+                    "Ralph Fiennes"
+                ],
+                "Ryan Reynolds": [
+                    "Ryan Reynolds"
+                ],
+                "Jack Black": [
+                    "Jack Black"
+                ],
+                "Ben Affleck": [
+                    "Ben Affleck"
+                ],
+                "Robert De Niro": [
+                    "Robert De Niro"
+                ],
+                "Jason Statham": [
+                    "Jason Statham"
+                ],
+                "Sylvester Stallone": [
+                    "Sylvester Stallone"
+                ],
+                "Paul Rudd": [
+                    "Paul Rudd"
+                ],
+                "Owen Wilson": [
+                    "Owen Wilson"
+                ],
+                "Adam Driver": [
+                    "Adam Driver"
+                ],
+                "Daniel Craig": [
+                    "Daniel Craig"
+                ],
+                "Daisy Ridley": [
+                    "Daisy Ridley"
+                ],
+                "John Boyega": [
+                    "John Boyega"
+                ],
+                "Morgan Freeman": [
+                    "Morgan Freeman"
+                ],
+                "Robin Williams": [
+                    "Robin Williams"
+                ],
+                "Keanu Reeves": [
+                    "Keanu Reeves"
+                ],
+                "Orlando Bloom": [
+                    "Orlando Bloom"
+                ],
+                "Mel Gibson": [
+                    "Mel Gibson"
+                ],
+                "George Clooney": [
+                    "George Clooney"
+                ],
+                "Kevin Hart": [
+                    "Kevin Hart"
+                ],
+                "Robert Pattinson": [
+                    "Robert Pattinson"
+                ],
+                "Brie Larson": [
+                    "Brie Larson"
+                ],
+                "Simon Pegg": [
+                    "Simon Pegg"
+                ],
+                "Lupita Nyong'o": [
+                    "Lupita Nyong'o"
+                ],
+                "Arnold Schwarzenegger": [
+                    "Arnold Schwarzenegger"
+                ],
+                "Shia LaBeouf": [
+                    "Shia LaBeouf"
+                ],
+                "Meryl Streep": [
+                    "Meryl Streep"
+                ],
+                "Anthony Mackie": [
+                    "Anthony Mackie"
+                ],
+                "Jude Law": [
+                    "Jude Law"
+                ],
+                "Jon Favreau": [
+                    "Jon Favreau"
+                ],
+                "Mark Hamill": [
+                    "Mark Hamill"
+                ],
+                "Denzel Washington": [
+                    "Denzel Washington"
+                ],
+                "Anthony Hopkins": [
+                    "Anthony Hopkins"
+                ],
+                "Keegan-Michael Key": [
+                    "Keegan-Michael Key"
+                ],
+                "Tim Allen": [
+                    "Tim Allen"
+                ],
+                "Keira Knightley": [
+                    "Keira Knightley"
+                ],
+                "Channing Tatum": [
+                    "Channing Tatum"
+                ],
+                "Geoffrey Rush": [
+                    "Geoffrey Rush"
+                ],
+                "Mike Myers": [
+                    "Mike Myers"
+                ]
+            }
+        },
+        "genre": {
+            "options": {
+                "action": [
+                    "action"
+                ],
+                "adventure": [
+                    "adventure"
+                ],
+                "animation": [
+                    "animation"
+                ],
+                "comedy": [
+                    "comedy"
+                ],
+                "crime": [
+                    "crime"
+                ],
+                "documentary": [
+                    "documentary"
+                ],
+                "drama": [
+                    "drama"
+                ],
+                "family": [
+                    "family"
+                ],
+                "fantasy": [
+                    "fantasy"
+                ],
+                "history": [
+                    "history"
+                ],
+                "horror": [
+                    "horror"
+                ],
+                "music": [
+                    "music"
+                ],
+                "mystery": [
+                    "mystery"
+                ],
+                "romance": [
+                    "romance"
+                ],
+                "science fiction": [
+                    "science fiction"
+                ],
+                "tv movie": [
+                    "tv movie"
+                ],
+                "thriller": [
+                    "thriller"
+                ],
+                "war": [
+                    "war"
+                ],
+                "western": [
+                    "western"
+                ]
+            }
+        }
+    }
+}
